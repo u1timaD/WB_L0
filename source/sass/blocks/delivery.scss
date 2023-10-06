@@ -1,0 +1,136 @@
+.delivery {
+
+}
+.delivery__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: $color-default-white;
+  position: relative;
+  border-radius: 18px;
+  padding-top: 16.1px;
+  padding-bottom: 24px;
+  margin-bottom: 12px;
+}
+
+.delivery__title {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 9px;
+
+
+}
+
+.delivery__title h2 {
+  font-size: 20px;
+  font-family: "SegoeUIBold";
+  line-height: 28px;
+  letter-spacing: -0.2px;
+}
+
+.delivery__info {
+  position: relative;
+  padding-left: 38px;
+  font-size: 13px;
+  line-height: 16px;
+  font-family: "SegoeUI";
+  height: 32px;
+  margin-top: 28.1px;
+}
+
+.delivery__info--result {
+  background-color:$color-magnolia;
+  height: 52px;
+  border-radius: 9px;
+  padding-top: 8px;
+  margin-top: 1.9px;
+
+  @include vp-1024 {
+    border-radius: 8px;
+    max-width: 255px;
+    margin-top: 103.7px;
+  }
+
+  @include vp-1400 {
+
+  }
+}
+
+.delivery__info--result .delivery__text {
+  @include vp-1024 {
+    max-width: 209px;
+
+  }
+
+  @include vp-1400 {
+
+  }
+}
+
+.delivery__text {
+  position: relative;
+  display: block;
+  max-width: 242px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/icons/ok-mark.png");
+    background-repeat: no-repeat;
+    width: 22px;
+    height: 22px;
+    top: calc(50% - 12.7px);
+    left: -30px;
+  }
+  @include vp-1024 {
+    max-width: 209px;
+
+  }
+
+  @include vp-1400 {
+
+  }
+
+}
+
+
+.delivery__free {
+  color: $color-caribbean-green;
+  cursor: pointer;
+  text-decoration: underline dashed rgb(12,180,119,0.2);
+}
+
+
+.delivery__cost {
+  margin-bottom: 17.2px;
+}
+
+.dates__img--wrapper img {
+  border-radius: 9px;
+}
+
+.delivery__storage,
+.delivery__cost {
+  @include vp-1024 {
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  @include vp-1400 {
+
+  }
+}
+
+.dates__item  {
+  @include vp-1024 {
+    flex-direction: row;
+
+  }
+
+  @include vp-1400 {
+
+  }
+}

@@ -1,0 +1,52 @@
+.absence {
+  // margin-top: 48px;
+  margin-bottom: 31.8px;
+}
+
+.absence__title {
+  display: block;
+  max-height: 24px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "SegoeUIBold";
+  letter-spacing: -0.023em;
+  padding-top: 0;
+}
+
+.absence__title--number {
+  position: relative;
+  margin-left: 8.8px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: $color-default-black;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    top: 11.9px;
+    left: -7.1px;
+  }
+}
+
+.absence__title span:not(:last-of-type) {
+  margin-right: 4px;
+}
+
+.absence .product__count {
+  max-height: 24px;
+}
+
+.absence .count__grade {
+  margin-right: -8.3px;
+}
+
+.absence .product__description {
+  color: $color-logan;
+}
+
+.absence .accordion__arrow {
+  top: calc(50% - 2.8px);
+}

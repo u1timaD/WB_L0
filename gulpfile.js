@@ -14,7 +14,8 @@ const clean = () => del('build');
 const syncServer = () => {
   server.init({
     server: 'build/',
-    index: 'sitemap.html',
+    // По умалчанию указывается разводящая страница sitemap для тестирования
+    index: 'index.html',
     notify: false,
     open: true,
     cors: true,

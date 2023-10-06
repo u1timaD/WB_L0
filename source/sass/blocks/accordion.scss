@@ -1,0 +1,59 @@
+.accordion__arrow {
+  fill: $color-logan;
+}
+
+.accordion__checkbox {
+  display: flex;
+  align-items: center;
+  min-width: 125px;
+  cursor: pointer;
+}
+
+.accordion__checkbox .checkbox__container {
+  position: relative;
+}
+
+.accordion__checkbox input:checked + .checkbox__container::after {
+  display: block;
+}
+
+
+.accordion__button {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.accordion__button span {
+  display: block;
+  position: relative;
+  width: 44px;
+  height: 44px;
+}
+
+.accordion__arrow {
+  position: absolute;
+  left: calc(50% - 0.4px);
+  top: calc(50% - 4.9px);
+  transform: rotate(0deg);
+  transition: transform 0.3s;
+
+  @include vp-1024 {
+    left: calc(50% - -3.5px);
+    top: calc(50% - 3.9px);
+  }
+
+  @include vp-1400 {
+
+  }
+}
+
+
+
+.accordion__arrow--closed {
+  transform: rotate(180deg);
+  transition: transform 0.3s;
+}

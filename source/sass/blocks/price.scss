@@ -1,0 +1,42 @@
+.price {
+}
+
+.price__last span {
+  color: $color-logan;
+  border-bottom: 1px dashed $color-logan;
+}
+
+.price__current {
+  font-size: 16px;
+  font-family: "SegoeUIBold";
+  line-height: 24px;
+  color: $color-default-black;
+
+  &--currency {
+    margin-left: 1px;
+  }
+}
+
+.price--phone .price__current--number {
+  letter-spacing: -0.6px;
+}
+.price--phone .price__current--currency{
+  margin-left: 1.6px;
+}
+
+.price__last {
+  position: relative;
+  margin-left: 4.5px;
+  margin-top: 3.8px;
+  letter-spacing: -0.5px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: $color-logan;
+    top: 11px;
+    left: 0;
+  }
+}

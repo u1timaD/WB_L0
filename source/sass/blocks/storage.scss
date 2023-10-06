@@ -1,0 +1,36 @@
+.storage {
+  font-size: 16px;
+  font-family: "SegoeUI";
+  line-height: 24px;
+}
+
+.storage__wrapper {
+  margin-bottom: 17.5px;
+}
+
+.storage__title {
+  font-size: 16px;
+  font-family: "SegoeUISemiBold";
+}
+
+.storage__address {
+  margin-bottom: 2.2px;
+}
+
+.storage__info {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+  gap: 8px;
+  font-size: 13px;
+  font-family: "SegoeUI";
+  line-height: 16px;
+
+}
+
+.storage__star {
+  margin-top: 1.3px;
+  margin-right: -4.2px;
+  fill: $color-orange-peel;
+}

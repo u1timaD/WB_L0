@@ -1,0 +1,138 @@
+.person {
+
+}
+
+.person label {
+  position: relative;
+  min-height: 56px;
+  display: flex;
+  align-items: center;
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    left: 0;
+    bottom: 14.3px;
+    background-color: $color-default-black;
+    opacity: 20%;
+  }
+}
+
+.person label input {
+  padding: 0;
+  min-height: 24px;
+  width: 100%;
+  border: none;
+  background-color: inherit;
+  outline: none;
+  font-size: 16px;
+  font-family: "SegoeUI";
+  line-height: 24px;
+
+  // margin-top: -3.2px;
+  margin-left: -1.3px;
+
+
+  &::placeholder {
+    color: $color-spun-pearl;
+    opacity: 1;
+    transition: opacity 1s;
+  }
+
+
+}
+
+.person__unn {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: 'Для таможенного оформления';
+    font-size: 12px;
+    line-height: 14px;
+    font-family: "SegoeUI";
+    bottom: 0;
+  }
+}
+
+.person__label {
+  position: relative;
+
+  & span  {
+    position: absolute;
+    color: $color-spun-pearl;
+    font-size: 12px;
+    font-family: "SegoeUI";
+    line-height: 14px;
+    top: 10px;
+    left: -0.9px;
+    opacity: 0;
+    letter-spacing: 0.2px;
+    transition: all 0.4s;
+
+  }
+}
+
+.person__label input:focus + span {
+  opacity: 1;
+  top: -2.5px;
+  transition: all 1s;
+}
+
+.person__label input:focus::placeholder {
+  // color: transparent;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.person__name {
+  @include vp-1024 {
+    flex: 1 0 250px;
+  }
+
+  @include vp-1400 {
+
+  }
+}
+
+.person__surname {
+  @include vp-1024 {
+    flex: 1 0 250px;
+  }
+
+  @include vp-1400 {
+
+  }
+}
+
+.person__email {
+  @include vp-1024 {
+    flex: 1 0 100px;
+  }
+
+  @include vp-1400 {
+
+  }
+}
+
+.person__phone {
+  @include vp-1024 {
+    flex: 1 0 100px;
+  }
+
+  @include vp-1400 {
+
+  }
+}
+
+.person__unn {
+  @include vp-1024 {
+    flex: 1 0 100px;
+  }
+
+  @include vp-1400 {
+
+  }
+}

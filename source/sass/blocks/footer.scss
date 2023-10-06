@@ -1,0 +1,21 @@
+.footer__container {
+  background-color: $color-royal-purple;
+  min-height: 84px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  z-index: 1;
+  margin-top: -20px;
+  margin-bottom: 55px;
+  padding-bottom: 24px;
+}
+
+.footer__text {
+  font-size: 13px;
+  font-family: "SegoeUI";
+  line-height: 16px;
+  color: $color-default-white;
+  letter-spacing: 0.3px;
+  opacity: 70%;
+  margin-left: 2.5px;
+}

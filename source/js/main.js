@@ -1,24 +1,67 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 
+
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
 
-  // Utils
-  // ---------------------------------
+  const ACCORDION_BUTTON_AVAILABLE = document.querySelector('.available .accordion__button');
+  const ACCORDION_BUTTON_ABSENCE = document.querySelector('.absence .accordion__button');
+  const ACCORDION_ARROW_AVAILABLE = document.querySelector('.available .accordion__arrow');
+  const ACCORDION_ARROW_ABSENCE = document.querySelector('.absence .accordion__arrow');
 
-  iosVhFix();
+  const BASKET_LIST_AVAILABLE = document.querySelector('.available .basket__list');
+  const BASKET_LIST_ABSENCE = document.querySelector('.absence .basket__list');
 
-  // Modules
-  // ---------------------------------
 
-  // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
-  // в load следует добавить скрипты, не участвующие в работе первого экрана
-  window.addEventListener('load', () => {
-    initModals();
+  ACCORDION_BUTTON_AVAILABLE.addEventListener('click', function () {
+    BASKET_LIST_AVAILABLE.classList.toggle('basket__list--closed');
+    ACCORDION_ARROW_AVAILABLE.classList.toggle('accordion__arrow--closed');
   });
+
+  ACCORDION_BUTTON_ABSENCE.addEventListener('click', function () {
+    BASKET_LIST_ABSENCE.classList.toggle('basket__list--closed');
+    ACCORDION_ARROW_ABSENCE.classList.toggle('accordion__arrow--closed');
+  });
+
+
+  const accordion__checkbox = document.querySelector('.accordion__checkbox input');
+  const all_accordion__checkbox = document.querySelectorAll('.product__checkbox input');
+
+  all_accordion__checkbox.forEach((check)=> {
+    accordion__checkbox.addEventListener('click', function () {
+      if (accordion__checkbox.checked) {
+        check.checked = true;
+      } else {
+        check.checked = false;
+      }
+    });
+
+
+  })
+
+
+
+
 });
+// Utils
+// ---------------------------------
+
+
+iosVhFix();
+
+// Modules
+// ---------------------------------
+
+// все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
+// в load следует добавить скрипты, не участвующие в работе первого экрана
+window.addEventListener('load', () => {
+  initModals();
+
+
+});
+
 
 // ---------------------------------
 

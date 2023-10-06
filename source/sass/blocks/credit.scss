@@ -1,0 +1,28 @@
+.credit {
+  display: flex;
+  flex-direction: row;
+  height: 24px;
+  align-items: center;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/icons/credit-mir.png");
+    width: 32px;
+    height: 24px;
+  }
+}
+
+.credit__number, .credit__date {
+  margin-left: 40px;
+  font-size: 16px;
+  font-family: "SegoeUI";
+  line-height: 24px;
+  margin-top: 2px;
+
+}
+
+.credit__date {
+  margin-left: 12px;
+}

@@ -1,0 +1,149 @@
+.product__checkbox .checkbox__container {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  background-color: $color-default-white;
+}
+
+.product__card {
+  // margin-top: 16px;
+  display: flex;
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.product__card--phone {
+  margin-bottom: 10.1px;
+}
+
+.product__card--pencils {
+  margin-bottom: 12px;
+}
+
+
+.product__info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 8px;
+  gap: 2px;
+  font-size: 14px;
+  line-height: 20px;
+  max-width: 192px;
+}
+
+.product__count {
+  display: flex;
+  align-items: center;
+  max-height: 32px;
+
+  @include vp-1024 {
+    flex-direction: column;
+  }
+
+  @include vp-1400 {
+
+  }
+}
+
+.product__price {
+  display: flex;
+  align-items: center;
+  margin-top: 0.2px;
+
+  @include vp-1024 {
+    // position: absolute;
+    // top: 0;
+    // right: 0;
+  }
+
+  @include vp-1400 {
+
+  }
+}
+
+.product__size {
+  position: absolute;
+  font-size: 14px;
+  font-family: "SegoeUI";
+  line-height: 20px;
+  padding: 1px 3.3px;
+  background-color: $color-default-white;
+  border-radius: 6px;
+  text-align: center;
+  bottom: 4px;
+  left: 4px;
+  z-index: 5;
+}
+
+.product__img {
+  width: 88px;
+  height: 106px;
+}
+
+.available .product__link {
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    border-radius: 8px;
+    max-width: 80px;
+    max-height: 106px;
+  }
+}
+
+.absence .product__link {
+  filter: saturate(0%);
+}
+
+.product__link--absence {
+  cursor: default;
+  & img {
+    filter: grayscale(100%);
+
+  }
+}
+
+.product__count--absence {
+  margin-left: auto;
+}
+
+.product__info--absence {
+  color: $color-logan;
+}
+
+.product__name--title {
+  font-size: 14px;
+  font-family: "SegoeUI";
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.product__style {
+  margin-left: -0.4px;
+  margin-top: 0.9px;
+
+}
+
+.product__style--title {
+  font-size: 13px;
+  font-family: "SegoeUI";
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.product__warehouse--title {
+  font-size: 13px;
+  color: $color-logan;
+}
+
+.product__description {
+  display: flex;
+  flex-direction: column;
+  gap: 4.4px;
+}
