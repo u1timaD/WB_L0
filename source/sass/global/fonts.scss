@@ -12,10 +12,31 @@
 @font-face {
   font-style: normal;
   font-weight: 400;
-  font-family: "";
-
+  font-family: "SegoeUI";
   font-display: swap;
   src:
-    url("../fonts/.woff2") format("woff2"),
-    url("../fonts/.woff") format("woff");
+    url("../fonts/SegoeUI.woff2") format("woff2"),
+    url("../fonts/SegoeUI.woff") format("woff");
+}
+
+/* Шрифт "Segoe UI SemiBold" */
+@font-face {
+  font-style: normal;
+  font-weight: 600; 
+  font-family: "SegoeUISemiBold";
+  font-display: swap;
+  src:
+    url("../fonts/SegoeUI-SemiBold.woff2") format("woff2"),
+    url("../fonts/SegoeUI-SemiBold.woff") format("woff");
+}
+
+/* Шрифт "Segoe UI Bold" */
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "SegoeUIBold";
+  font-display: swap;
+  src:
+    url("../fonts/SegoeUI-Bold.woff2") format("woff2"),
+    url("../fonts/SegoeUI-Bold.woff") format("woff");
 }

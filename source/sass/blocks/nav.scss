@@ -1,0 +1,55 @@
+.nav {
+
+}
+
+.nav--mobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 38.5px;
+  z-index: 10;
+  position: fixed;
+  width: 100%;
+  height: 56px;
+  bottom: 0;
+  left: 0;
+  background-color: $color-default-white;
+
+
+}
+
+.nav__link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  fill: transparent;
+  width: 28px;
+  height: 28px;
+}
+
+.nav__icon svg {
+  fill: $color-very-light-grey;
+
+  &:hover {
+    fill: $color-deep-magenta;
+  }
+}
+
+
+.nav__icon--count {
+    position: absolute;
+    font-size: 10px;
+    color: $color-default-white;
+    font-family: "SegoeUISemiBold";
+    min-width: 16px;
+    min-height: 16px;
+    background-color: $color-outrageous-orange;
+    top: -6.5px;
+    right: -5.5px;
+    border-radius: 9px;
+    padding-inline: 5px;
+    line-height: 16px;
+    text-align: center;
+}

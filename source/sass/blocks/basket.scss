@@ -1,0 +1,97 @@
+.basket {
+
+}
+
+.basket__container {
+  position: relative;
+  // padding-bottom: 32px;
+
+  display: flex;
+  flex-direction: column;
+
+
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   width: 100%;
+  //   background-color: red;
+  //   height: 24px;
+  //   left: 0;
+  //   top: -24px;
+  //   border-radius: 24px 24px 0 0;
+  // }
+
+  @include vp-1024 {
+    padding: 0;
+    padding-top: 13.9px;
+
+  }
+
+  @include vp-1400 {
+
+  }
+}
+
+.basket__title {
+  font-size: 20px;
+  font-family: "SegoeUIBold";
+  line-height: 25.2px;
+  letter-spacing: -0.2px;
+  margin-bottom: 17.9px;
+
+  @include vp-1024 {
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: -0.3px;
+    margin-bottom: 25.1px;
+  }
+
+  @include vp-1400 {
+
+  }
+}
+
+.basket__accordion {
+  height: 24px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 16px;
+
+  &--absence {
+    margin-bottom: 18px;
+  }
+
+}
+
+
+
+
+.basket__list {
+  display: flex;
+  flex-direction: column;
+  gap: 15.2px;
+  transition: all 0.3s;
+}
+
+
+.basket__list--closed {
+  display: none;
+  transition: all 0.3s;
+}
+
+.basket__item {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid $color-logan;
+  padding-top: 11.9px;
+
+  @include vp-1024 {
+    flex-direction: row;
+  }
+
+  @include vp-1400 {
+
+  }
+
+}

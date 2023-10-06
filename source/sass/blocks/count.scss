@@ -1,0 +1,37 @@
+.count__control {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $color-default-white;
+  width: 80px;
+  height: 32px;
+  border-radius: 4px;
+}
+
+
+
+.count__control button {
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.count__grade {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-top: 1.4px;
+}
+
+.count__last {
+  font-size: 13px;
+  font-family: "SegoeUI";
+  color: $color-red-orange;
+  margin-left: 16px;
+
+}
+
+.count__grade--pencils {
+  margin-right: -8.1px;
+  margin-top: 3.2px;
+}

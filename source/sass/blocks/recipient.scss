@@ -1,0 +1,50 @@
+.recipient {
+  @include vp-1024 {
+
+  }
+
+  @include vp-1400 {
+
+  }
+}
+
+.recipient__container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 16px;
+  padding-bottom: 24px;
+  background-color: $color-default-white;
+  border-radius: 9px;
+
+  @include vp-1024 {
+
+  }
+
+  @include vp-1400 {
+
+  }
+}
+
+.recipient__title {
+  margin-bottom: 6.2px;
+  font-size: 20px;
+  font-family: "SegoeUIBold";
+  line-height: 28px;
+  letter-spacing: -0.2px;
+}
+
+.recipient__form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  @include vp-1024 {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @include vp-1400 {
+
+  }
+}
+

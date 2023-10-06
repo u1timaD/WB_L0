@@ -1,0 +1,58 @@
+.dates__list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.dates__item {
+  display: flex;
+  flex-direction: column;
+  gap: 10.9px;
+}
+
+.dates__title {
+  font-size: 16px;
+  font-family: "SegoeUI";
+  line-height: 24px;
+  letter-spacing: 0.3px;
+}
+
+.dates__img {
+  display: flex;
+  flex-direction: row;
+  max-width: fit-content;
+  gap: 6.1px;
+}
+
+.dates__img--wrapper {
+ height: 56px;
+ position: relative;
+
+  & img {
+    max-height: 100%;
+    max-width: 100%
+  }
+
+  & span {
+    position: absolute;
+    font-size: 10px;
+    color: $color-default-white;
+    font-family: "SegoeUISemiBold";
+    min-width: 16px;
+    min-height: 16px;
+    background-color: $color-outrageous-orange;
+    top: -8.9px;
+    right: -2.4px;
+    border-radius: 9px;
+    padding-inline: 5px;
+    line-height: 16px;
+    text-align: center;
+  }
+
+  & .dates__img--quantity {
+    top: -1.9px;
+    right: -3.4px;
+  }
+}
+
+

@@ -15,8 +15,8 @@ html {
   font-style: normal;
   font-weight: 400;
   font-size: $fz-default;
-  line-height: 24px;
-  font-family: $ff-placeholder;
+  line-height: 20px;
+  font-family: $ff-segoe-ui;
   color: $color-default-black;
 
   -webkit-font-smoothing: antialiased;
@@ -126,4 +126,19 @@ button,
 [type="reset"],
 [type="submit"] {
   appearance: none;
+  border: none;
+  background-color: inherit;
+  padding: 0;
 }
+
+h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+

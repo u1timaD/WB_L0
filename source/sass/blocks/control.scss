@@ -1,0 +1,65 @@
+.control {
+  position: relative;
+}
+
+.control__number {
+  margin-bottom: 4px;
+}
+
+.control__number input {
+  font-size: 14px;
+  font-family: "SegoeUI";
+  line-height: 20px;
+  border: none;
+  background-color: inherit;
+  outline: none;
+  width: 32px;
+  height: 100%;
+  text-align: center;
+}
+
+.control__minus {
+  cursor: pointer;
+  position: relative;
+  width: 24px;
+  height: 32px;
+  border-radius: 4px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: $color-default-black;
+    width: 9px;
+    height: 1px;
+    top: calc(50% - 1.7px);
+    left: 42.7%;
+  }
+}
+
+
+.control__plus {
+  cursor: pointer;
+  position: relative;
+  width: 24px;
+  height: 32px;
+  border-radius: 4px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: $color-default-black;
+    width: 1px;
+    height: 9.1px;
+    top: calc(50% - 4.9px);
+    left: 43.7%;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: $color-default-black;
+    width: 9px;
+    height: 1px;
+    top: calc(50% - 1.7px);
+    left: calc(50% - 5.7px);
+  }
+}

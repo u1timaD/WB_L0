@@ -1,0 +1,83 @@
+.result {
+
+  @include vp-1024 {
+
+    background-color: burlywood;
+    outline: 1px solid rgba(0,0,0,0.30);
+    filter: drop-shadow(0px 2px 10px rgba(0,0,0,0.15));
+    // filter: drop-shadow(0px 1px 0px rgba(0,0,0,0.30));
+    width: 304px;
+    max-width: 429px;
+    border-radius: 16px;
+    height: 100%;
+  }
+
+  @include vp-1400 {
+
+  }
+}
+
+.result__container {
+  padding-top: 25.5px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  @include vp-1024 {
+    padding-top: 16.6px;
+    padding-bottom:  24.6px;
+    padding-left: 23.8px;
+  }
+
+  @include vp-1400 {
+
+  }
+}
+
+.result__table {
+  display: flex;
+  flex-direction: column;
+}
+
+.result__payment {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 7px 8px 12px;
+  background-color: $color-magnolia;
+  border-radius: 8px;
+
+  @include vp-1024 {
+    margin-top: 71px;
+    max-width: 255px;
+    padding-top: 7.3px;
+  }
+
+  @include vp-1400 {
+
+  }
+}
+
+.result__payment-title,
+.result__payment-info {
+  font-size: 13px;
+  font-family: "SegoeUI";
+  line-height: 16px;
+  display: block;
+}
+
+.result__payment-title {
+  margin-left: 7.9px;
+}
+
+.result__payment-info {
+}
+
+.result__agreement {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 8.1px;
+}
+

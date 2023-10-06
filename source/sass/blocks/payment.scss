@@ -1,0 +1,37 @@
+.payment {
+  border-radius: 9px;
+  background-color: $color-default-white;
+  margin-bottom: 12px;
+
+  
+}
+
+.payment__container {
+  display: flex;
+  flex-direction: column;
+  gap: 7.1px;
+  padding-top: 15.1px;
+  padding-bottom: 24px;
+}
+
+.payment__title {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+
+}
+
+.payment__title h2 {
+  font-size: 20px;
+  font-family: "SegoeUIBold";
+  line-height: 28px;
+  letter-spacing: -0.21px;
+}
+
+.payment__info {
+  color: $color-spun-pearl;
+  font-size: 13px;
+  line-height: 16px;
+  font-family: "SegoeUI";
+  margin-top: 2px;
+}
