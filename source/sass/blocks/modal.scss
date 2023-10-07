@@ -117,3 +117,65 @@
 //     pointer-events: auto;
 //   }
 // }
+
+
+.payment__modal {
+  width: 100%;
+  max-width: 400px;
+  min-height: 408px;
+  background-color: red;
+  z-index: 10;
+}
+
+.modal {
+  position: absolute;
+  border-radius: 16px;
+}
+
+.payment__modal-title {
+  margin-bottom: 16px;
+}
+
+.payment__modal-container {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  justify-content: space-between;
+}
+
+
+.payment__modal-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.payment__modal-label {
+  display: flex;
+}
+
+.mir {
+  display: flex;
+  flex-direction: row;
+  height: 24px;
+  align-items: center;
+  position: relative;
+  margin-left: 60px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/icons/credit-mir.png");
+    width: 32px;
+    height: 24px;
+    left: -40px;
+  }
+}
+
+.payment__modal-button {
+  width: 164px;
+  height: 64px;
+  border-radius: 8px;
+  background-color: violet;
+
+}

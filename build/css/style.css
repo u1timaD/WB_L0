@@ -666,6 +666,86 @@ li {
   margin-top: 4px;
 }
 
+.payment__modal {
+  width: 100%;
+  max-width: 400px;
+  min-height: 408px;
+  background-color: red;
+  z-index: 10;
+}
+
+.modal {
+  position: absolute;
+  border-radius: 16px;
+}
+
+.payment__modal-title {
+  margin-bottom: 16px;
+}
+
+.payment__modal-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 300px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.payment__modal-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.payment__modal-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mir {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  height: 24px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  margin-left: 60px;
+}
+
+.mir::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/icons/credit-mir.png");
+  width: 32px;
+  height: 24px;
+  left: -40px;
+}
+
+.payment__modal-button {
+  width: 164px;
+  height: 64px;
+  border-radius: 8px;
+  background-color: violet;
+}
+
 .checkbox .checkbox__container {
   position: absolute;
   width: 22px;
