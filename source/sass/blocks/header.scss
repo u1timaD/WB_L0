@@ -1,7 +1,7 @@
 .header {
   position: relative;
   width: 100%;
-  min-height: 80px;
+  min-height: 88.9px;
   background-color: $color-royal-purple;
   padding: 14px 13px;
 
@@ -151,4 +151,47 @@
   }
 }
 
+.header__search {
+  display: none;
 
+  @include vp-1024 {
+    display: block;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      background-image: url("../img/svg/search.svg");
+      width: 21px;
+      height: 21px;
+      opacity: 0.4;
+      transition: opacity 0.2s;
+      right: 20px;
+      top: calc(50% - 11.5px);
+    }
+  }
+
+  @include vp-1400 {
+
+  }
+}
+
+.search:focus-within:after {
+  transition: opacity 0.2s;
+  opacity: 0;
+}
+
+.header__search--mobile {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  display: block;
+
+  @include vp-1024 {
+    display: none;
+  }
+
+  @include vp-1400 {
+
+  }
+}

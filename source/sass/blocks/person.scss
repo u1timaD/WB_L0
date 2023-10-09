@@ -14,7 +14,7 @@
     height: 1px;
     width: 100%;
     left: 0;
-    bottom: 14.3px;
+    bottom: 13.6px;
     background-color: $color-default-black;
     opacity: 20%;
   }
@@ -60,7 +60,7 @@
 .person__label {
   position: relative;
 
-  & span  {
+  & span:first-of-type  {
     position: absolute;
     color: $color-spun-pearl;
     font-size: 12px;
@@ -75,7 +75,7 @@
   }
 }
 
-.person__label input:focus + span {
+.person__label input:focus + span:first-of-type {
   opacity: 1;
   top: -2.5px;
   transition: all 1s;
@@ -135,4 +135,13 @@
   @include vp-1400 {
 
   }
+}
+.person__unn-info {
+  position: absolute;
+  font-size: 12px;
+  font-family: "SegoeUI";
+  line-height: 10px;
+  bottom: -2.3px;
+  left: -1px;
+
 }

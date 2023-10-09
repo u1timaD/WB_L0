@@ -40,7 +40,7 @@
   margin-top: 28.1px;
 }
 
-.delivery__info--result {
+.delivery__info-result {
   background-color:$color-magnolia;
   height: 52px;
   border-radius: 9px;
@@ -58,10 +58,21 @@
   }
 }
 
-.delivery__info--result .delivery__text {
+.delivery__info-result .delivery__text {
   @include vp-1024 {
+    width: 100%;
     max-width: 209px;
 
+  }
+
+  @include vp-1400 {
+
+  }
+}
+
+.delivery__info-main .delivery__text {
+  @include vp-1024 {
+    max-width: 100%;
   }
 
   @include vp-1400 {
@@ -104,7 +115,7 @@
 
 
 .delivery__cost {
-  margin-bottom: 17.2px;
+  margin-bottom: 16.3px;
 }
 
 .dates__img--wrapper img {
@@ -115,8 +126,6 @@
 .delivery__cost {
   @include vp-1024 {
     display: flex;
-    justify-content: space-between;
-
   }
 
   @include vp-1400 {
@@ -128,6 +137,27 @@
   @include vp-1024 {
     flex-direction: row;
 
+  }
+
+  @include vp-1400 {
+
+  }
+}
+
+.delivery-card-title {
+  @include vp-1024 {
+    max-width: 177px;
+    width: 100%;
+  }
+
+  @include vp-1400 {
+
+  }
+}
+
+.delivery-card-info {
+  @include vp-1024 {
+    margin-left: 16px;
   }
 
   @include vp-1400 {

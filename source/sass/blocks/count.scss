@@ -21,6 +21,18 @@
   align-items: center;
   margin-left: auto;
   margin-top: 1.4px;
+
+  @include vp-1024 {
+    margin: 0;
+    margin-left: auto;
+    width: 100%;
+    max-width: 56px;
+    justify-content: space-between;
+  }
+
+  @include vp-1400 {
+
+  }
 }
 
 .count__last {
@@ -29,6 +41,13 @@
   color: $color-red-orange;
   margin-left: 16px;
 
+  @include vp-1024 {
+    margin-left: 0;
+  }
+
+  @include vp-1400 {
+
+  }
 }
 
 .count__grade--pencils {

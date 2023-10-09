@@ -43,10 +43,33 @@
   margin-right: -8.3px;
 }
 
+.absence .product__info {
+  @include vp-1024 {
+    max-width: 270px;
+  }
+
+  @include vp-1400 {
+
+  }
+
+}
+
 .absence .product__description {
   color: $color-logan;
 }
 
 .absence .accordion__arrow {
   top: calc(50% - 2.8px);
+}
+
+.absence .product__checkbox {
+
+  @include vp-1024 {
+    display: none;
+  }
+
+  @include vp-1400 {
+
+  }
+
 }

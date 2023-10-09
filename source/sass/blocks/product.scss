@@ -1,8 +1,20 @@
 .product__checkbox .checkbox__container {
+  display: block;
   position: absolute;
   top: 4px;
   left: 4px;
   background-color: $color-default-white;
+
+  @include vp-1024 {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-right: 12px;
+  }
+
+  @include vp-1400 {
+
+  }
 }
 
 .product__card {
@@ -10,6 +22,16 @@
   display: flex;
   position: relative;
   margin-bottom: 12px;
+
+
+  @include vp-1024 {
+    margin-bottom: 0;
+    align-items: center;
+  }
+
+  @include vp-1400 {
+
+  }
 }
 
 .product__card--phone {
@@ -24,11 +46,20 @@
 .product__info {
   display: flex;
   flex-direction: column;
-  margin-left: 8px;
+  margin-left: auto;
   gap: 2px;
   font-size: 14px;
   line-height: 20px;
   max-width: 192px;
+  width: 100%;
+
+  @include vp-1024 {
+    max-width: 220px;
+  }
+
+  @include vp-1400 {
+
+  }
 }
 
 .product__count {
@@ -38,6 +69,8 @@
 
   @include vp-1024 {
     flex-direction: column;
+    margin-left: auto;
+    margin-right: 16px;
   }
 
   @include vp-1400 {
@@ -48,7 +81,7 @@
 .product__price {
   display: flex;
   align-items: center;
-  margin-top: 0.2px;
+
 
   @include vp-1024 {
     // position: absolute;
@@ -61,7 +94,36 @@
   }
 }
 
+.product__price--mobile {
+  margin-top: 0.2px;
+
+  @include vp-1024 {
+    display: none;
+  }
+
+  @include vp-1400 {
+
+  }
+}
+
+.product__price--desktop {
+  display: none;
+
+  @include vp-1024 {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    max-width: 110px;
+    width: 100%;
+  }
+
+  @include vp-1400 {
+
+  }
+}
+
 .product__size {
+  display: block;
   position: absolute;
   font-size: 14px;
   font-family: "SegoeUI";
@@ -73,15 +135,35 @@
   bottom: 4px;
   left: 4px;
   z-index: 5;
+
+  @include vp-1024 {
+    display: none;
+  }
+
+  @include vp-1400 {
+
+  }
+
 }
 
 .product__img {
-  width: 88px;
+  width: 100%;
+  max-width: 80px;
   height: 106px;
+
+  @include vp-1024 {
+   max-width: 72px;
+   align-self: flex-start;
+  }
+
+  @include vp-1400 {
+
+  }
 }
 
 .available .product__link {
   position: relative;
+  width: 100%;
 
   &:after {
     content: "";
@@ -117,29 +199,135 @@
   color: $color-logan;
 }
 
-.product__name--title {
+
+.product__name-title {
   font-size: 14px;
   font-family: "SegoeUI";
   font-weight: 400;
   line-height: 20px;
 }
 
+.product__name-title--mobile {
+  display: block;
+  @include vp-1024 {
+    display: none;
+  }
+
+  @include vp-1400 {
+
+  }
+}
+
+.product__name-title--desktop {
+  display: none;
+
+  @include vp-1024 {
+    display: block;
+  }
+
+  @include vp-1400 {
+
+  }
+}
+
 .product__style {
   margin-left: -0.4px;
   margin-top: 0.9px;
 
+  @include vp-1024 {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  @include vp-1400 {
+
+  }
 }
 
-.product__style--title {
+.product__style-color {
   font-size: 13px;
   font-family: "SegoeUI";
   font-weight: 400;
   line-height: 20px;
+
+  @include vp-1024 {
+    display: flex;
+
+    & span:first-of-type {
+      margin-right: 3px;
+    }
+  }
+
+  @include vp-1400 {
+
+  }
 }
 
-.product__warehouse--title {
-  font-size: 13px;
-  color: $color-logan;
+.product__style-size {
+  display: none;
+
+  @include vp-1024 {
+    display: flex;
+
+    & span:first-of-type {
+      margin-right: 3px;
+    }
+  }
+
+  @include vp-1400 {
+
+  }
+}
+
+
+.product__warehouse {
+
+  @include vp-1024 {
+    font-size: 13px;
+    color: $color-logan;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @include vp-1400 {
+
+  }
+}
+.product__warehouse-title {
+    font-size: 13px;
+    color: $color-logan;
+
+  @include vp-1024 {
+    margin-bottom: 4px;
+  }
+
+  @include vp-1400 {
+
+  }
+}
+
+.product__warehouse-shop {
+  display: none;
+
+  @include vp-1024 {
+    display: block;
+    position: relative;
+    margin-bottom: 4px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      background-image: url("../img/svg/info.svg");
+      width: 20px;
+      height: 20px;
+      margin-left: 6px;
+    }
+  }
+
+  @include vp-1400 {
+
+  }
 }
 
 .product__description {

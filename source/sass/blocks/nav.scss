@@ -15,7 +15,13 @@
   left: 0;
   background-color: $color-default-white;
 
+  @include vp-1024 {
+    display: none;
+  }
 
+  @include vp-1400 {
+
+  }
 }
 
 .nav__link {
@@ -27,13 +33,41 @@
   fill: transparent;
   width: 28px;
   height: 28px;
+
+  @include vp-1024 {
+    height: 56px;
+    width: 56px;
+    flex-direction: column;
+    color: $color-default-white;
+    font-size: 13px;
+    line-height: 16px;
+    font-family: "SegoeUI";
+
+
+  }
+
+  @include vp-1400 {
+
+  }
+
 }
+
 
 .nav__icon svg {
   fill: $color-very-light-grey;
 
   &:hover {
     fill: $color-deep-magenta;
+  }
+
+  @include vp-1024 {
+    fill: $color-default-white;
+
+
+  }
+
+  @include vp-1400 {
+
   }
 }
 
@@ -52,4 +86,27 @@
     padding-inline: 5px;
     line-height: 16px;
     text-align: center;
+
+    @include vp-1024 {
+      top: -3.6px;
+      right: 6.7px;
+    }
+
+    @include vp-1400 {
+
+    }
+}
+
+.nav--desktop {
+  display: none;
+
+  @include vp-1024 {
+    display: flex;
+    margin-left: auto;
+    gap: 40px;
+  }
+
+  @include vp-1400 {
+
+  }
 }

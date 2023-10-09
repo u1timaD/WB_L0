@@ -1,10 +1,45 @@
-.search {
-  width: 28px;
-  height: 28px;
-  cursor: pointer;
-}
+
 
 .search__icon {
   fill: $color-default-white;
   margin-top: 4px;
 }
+
+.search {
+  @include vp-1024 {
+    background-color: rgb(255,255,255,0.2);
+    width: 100%;
+    max-width: 594px;
+    height: 48px;
+    border-radius: 36px;
+    padding: 10px 20px;
+  }
+
+  @include vp-1400 {
+
+  }
+
+
+}
+
+.search input {
+  @include vp-1024 {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    outline: 0;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: "SegoeUI";
+    color: $color-default-white;
+
+    &::placeholder {
+      color: $color-default-white;
+    }
+  }
+
+  @include vp-1400 {
+
+  }
+}
+

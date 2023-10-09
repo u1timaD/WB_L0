@@ -8,6 +8,14 @@
   margin-top: -20px;
   margin-bottom: 55px;
   padding-bottom: 24px;
+
+  @include vp-1024 {
+    margin-bottom: 0;
+  }
+
+  @include vp-1400 {
+
+  }
 }
 
 .footer__text {

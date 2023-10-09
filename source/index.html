@@ -25,15 +25,38 @@
             <a class="header__logo" href="#">
               <h1>Товары и точка</h1>
             </a>
-            <button class="header__search search">
+            <label class="header__search search">
+              <input type="search" placeholder="Я ищу...">
+            </label>
+            <button class="header__search--mobile">
               <span>
                 <svg class="search__icon" width="21" height="21">
                   <use xlink:href="img/sprite.svg#search"></use>
                 </svg>
               </span>
             </button>
+            <div class="header__nav nav--desktop">
+
+              <a class="nav__link">
+                <span class="nav__icon">
+                  <svg class="nav__icon--person" width="23" height="22">
+                    <use  xlink:href="img/sprite.svg#person"></use>
+                  </svg>
+                </span>
+                <span>Профиль</span>
+              </a>
+              <a class="nav__link" href="#">
+                <span class="nav__icon">
+                  <svg class="nav__icon--cart" width="26" height="23">
+                    <use xlink:href="img/sprite.svg#cart"></use>
+                  </svg>
+                </span>
+                <span class="nav__icon--count">3</span>
+                <span>Корзина</span>
+              </a>
+            </div>
           </div>
-          <button class="header__search search"></button>
+          <!-- <button class="header__search search"></button> -->
           <div class="nav nav--mobile">
             <a class="nav__link" href="#">
               <span class="nav__icon">
@@ -110,7 +133,7 @@
                       </a>
                     </div>
                     <div class="product__info">
-                      <div class="product__price price">
+                      <div class="product__price price product__price--mobile">
                         <div class="price__current">
                           <span class="price__current--number">522</span>
                           <span class="price__current--currency">сом</span>
@@ -122,13 +145,21 @@
                       </div>
                       <div class="product__description">
                         <div class="product__name">
-                          <h3 class="product__name--title">Футболка UZcotton мужская</h3>
+                          <h3 class="product__name-title">Футболка UZcotton мужская</h3>
                         </div>
                         <div class="product__style">
-                          <span class="product__style--title">Цвет: белый</span>
+                          <div class="product__style-color">
+                            <span>Цвет:</span>
+                            <span>белый</span>
+                          </div>
+                          <div class="product__style-size">
+                            <span>Размер:</span>
+                            <span>56</span>
+                          </div>
                         </div>
                         <div class="product__warehouse">
-                          <span class="product__warehouse--title">Коледино WB</span>
+                          <span class="product__warehouse-title">Коледино WB</span>
+                          <span class="product__warehouse-shop">OOO Вайлдберриз</span>
                         </div>
                       </div>
                     </div>
@@ -161,6 +192,16 @@
                       </button>
                     </div>
                   </div>
+                  <div class="product__price price product__price--desktop">
+                    <div class="price__current">
+                      <span class="price__current--number">522</span>
+                      <span class="price__current--currency">сом</span>
+                    </div>
+                    <div class="price__last">
+                      <span class="price__last--number">1051</span>
+                      <span class="price__last--currency">сом</span>
+                    </div>
+                  </div>
                 </li>
 
                 <li class="basket__item product product">
@@ -176,7 +217,7 @@
                       </a>
                     </div>
                     <div class="product__info">
-                      <div class="product__price price price--phone">
+                      <div class="product__price price price--phone product__price--mobile">
                         <div class="price__current">
                           <span class="price__current--number">2 100 047</span>
                           <span class="price__current--currency">сом</span>
@@ -188,13 +229,18 @@
                       </div>
                       <div class="product__description">
                         <div class="product__name">
-                          <h3 class="product__name--title">Силиконовый чехол картхолдер (отверстия) для...</h3>
+                          <h3 class="product__name-title product__name-title--mobile">Силиконовый чехол картхолдер (отверстия) для...</h3>
+                          <h3 class="product__name-title product__name-title--desktop">Силиконовый чехол картхолдер (отверстия) для карт, прозрачный кейс бампер на Apple iPhone XR, MobiSafe</h3>
                         </div>
                         <div class="product__style">
-                          <span class="product__style--title">Цвет: прозрачный</span>
+                          <div class="product__style-color">
+                            <span>Цвет:</span>
+                            <span>прозрачный</span>
+                          </div>
                         </div>
                         <div class="product__warehouse">
-                          <span class="product__warehouse--title">Коледино WB</span>
+                          <span class="product__warehouse-title">Коледино WB</span>
+                          <span class="product__warehouse-shop">OOO Мегапрофстиль</span>
                         </div>
                       </div>
                     </div>
@@ -227,6 +273,16 @@
                       </button>
                     </div>
                   </div>
+                  <div class="product__price price product__price--desktop">
+                    <div class="price__current">
+                      <span class="price__current--number">2 100 047</span>
+                      <span class="price__current--currency">сом</span>
+                    </div>
+                    <div class="price__last">
+                      <span class="price__last--number">2 300 047</span>
+                      <span class="price__last--currency">сом</span>
+                    </div>
+                  </div>
                 </li>
 
 <!-- !Третий товар -->
@@ -243,7 +299,7 @@
                       </a>
                     </div>
                     <div class="product__info">
-                      <div class="product__price price">
+                      <div class="product__price price product__price--mobile">
                         <div class="price__current">
                           <span class="price__current--number">494</span>
                           <span class="price__current--currency">сом</span>
@@ -255,13 +311,15 @@
                       </div>
                       <div class="product__description">
                         <div class="product__name">
-                          <h3 class="product__name--title">Карандаши цветные Faber-Castell "Замок", набор 24 цв...</h3>
+                          <h3 class="product__name-title product__name-title--mobile">Карандаши цветные Faber-Castell "Замок", набор 24 цв...</h3>
+                          <h3 class="product__name-title product__name-title--desktop">Карандаши цветные Faber-Castell "Замок", набор 24 цвета, заточенные, шестигранные, Faber-Castell </h3>
                         </div>
                         <!-- <div class="product__style">
                           <span class="product__style--title">Цвет: белый</span>
                         </div> -->
                         <div class="product__warehouse">
-                          <span class="product__warehouse--title">Коледино WB</span>
+                          <span class="product__warehouse-title">Коледино WB</span>
+                          <span class="product__warehouse-shop">OOO Вайлдберриз</span>
                         </div>
                       </div>
                     </div>
@@ -292,6 +350,16 @@
                           </svg>
                         </span>
                       </button>
+                    </div>
+                  </div>
+                  <div class="product__price price product__price--desktop">
+                    <div class="price__current">
+                      <span class="price__current--number">494</span>
+                      <span class="price__current--currency">сом</span>
+                    </div>
+                    <div class="price__last">
+                      <span class="price__last--number">950</span>
+                      <span class="price__last--currency">сом</span>
                     </div>
                   </div>
                 </li>
@@ -340,13 +408,20 @@
                       </div> -->
                       <div class="product__description">
                         <div class="product__name">
-                          <h3 class="product__name--title">Футболка UZcotton мужская</h3>
+                          <h3 class="product__name-title">Футболка UZcotton мужская</h3>
                         </div>
                         <div class="product__style">
-                          <span class="product__style--title">Цвет: белый</span>
+                          <div class="product__style-color">
+                            <span>Цвет:</span>
+                            <span>белый</span>
+                          </div>
+                          <div class="product__style-size">
+                            <span>Размер:</span>
+                            <span>56</span>
+                          </div>
                         </div>
                         <!-- <div class="product__warehouse">
-                          <span class="product__warehouse--title">Коледино WB</span>
+                          <span class="product__warehouse-title">Коледино WB</span>
                         </div> -->
                       </div>
                     </div>
@@ -406,13 +481,17 @@
                       </div> -->
                       <div class="product__description">
                         <div class="product__name">
-                          <h3 class="product__name--title">Силиконовый чехол картхолдер (отверстия) для...</h3>
+                          <h3 class="product__name-title product__name-title--mobile">Силиконовый чехол картхолдер (отверстия) для...</h3>
+                          <h3 class="product__name-title product__name-title--desktop">Силиконовый чехол картхолдер (отверстия) для карт, прозрачный кейс бампер на Apple iPhone XR, MobiSafe</h3>
                         </div>
                         <div class="product__style">
-                          <span class="product__style--title">Цвет: прозрачный</span>
+                          <div class="product__style-color">
+                            <span>Цвет:</span>
+                            <span>прозрачный</span>
+                          </div>
                         </div>
                         <!-- <div class="product__warehouse">
-                          <span class="product__warehouse--title">Коледино WB</span>
+                          <span class="product__warehouse-title">Коледино WB</span>
                         </div> -->
                       </div>
                     </div>
@@ -473,13 +552,14 @@
                       </div> -->
                       <div class="product__description">
                         <div class="product__name">
-                          <h3 class="product__name--title">Карандаши цветные Faber-Castell "Замок", набор 24 цв...</h3>
+                          <h3 class="product__name-title product__name-title--mobile">Карандаши цветные Faber-Castell "Замок", набор 24 цв...</h3>
+                          <h3 class="product__name-title product__name-title--desktop">Карандаши цветные Faber-Castell "Замок", набор 24 цвета, заточенные, шестигранные, Faber-Castell </h3>
                         </div>
                         <!-- <div class="product__style">
                           <span class="product__style--title">Цвет: белый</span>
                         </div> -->
                         <!-- <div class="product__warehouse">
-                          <span class="product__warehouse--title">Коледино WB</span>
+                          <span class="product__warehouse-title">Коледино WB</span>
                         </div> -->
                       </div>
                     </div>
@@ -527,9 +607,9 @@
                   <button class="delivery__change btn__change">Изменить</button>
                 </div>
                 <div class="delivery__storage storage">
-                  <h3 class="storage__title">Пункт выдачи</h3>
-                  <div class="storage__wrapper">
-                    <p class="storage__address">Бишкек, улица Ахматбека Суюмбаева, 12/1</p>
+                  <h3 class="storage__title delivery-card-title">Пункт выдачи</h3>
+                  <div class="storage__wrapper delivery-card-info">
+                    <span class="storage__address">Бишкек, улица Ахматбека Суюмбаева, 12/1</span>
                     <div class="storage__info">
                       <span class="storage__star">
                         <svg class="star" width="12" height="11">
@@ -542,14 +622,14 @@
                   </div>
                 </div>
                 <div class="delivery__cost cost">
-                  <h3 class="cost__title">Стоимость доставки</h3>
-                  <span class="cost__description">Бесплатно</span>
+                  <h3 class="cost__title delivery-card-title">Стоимость доставки</h3>
+                  <span class="cost__description delivery-card-info">Бесплатно</span>
                 </div>
                 <div class="cost__dates dates">
                   <ul class="dates__list">
                     <li class="dates__item">
-                      <h3 class="dates__title">5—6 февраля</h3>
-                      <div class="dates__img">
+                      <h3 class="dates__title delivery-card-title">5—6 февраля</h3>
+                      <div class="dates__img delivery-card-info">
                         <div class="dates__img--wrapper">
                           <img src="img/product/t-shirt-mobile.png" alt="Картинка товара на которой изображена пара в разных майках, парень в чёрной, девушка в белой">
                           <!-- <span>184</span> -->
@@ -565,8 +645,8 @@
                       </div>
                     </li>
                     <li class="dates__item">
-                      <h3 class="dates_title">7—8 февраля</h3>
-                      <div class="dates__img">
+                      <h3 class="dates_title delivery-card-title">7—8 февраля</h3>
+                      <div class="dates__img delivery-card-info">
                         <div class="dates__img--wrapper">
                           <img src="img/product/phone-mobile.png" alt="Картинка товара на которой изображена пара в разных майках, парень в чёрной, девушка в белой">
                           <span class="dates__img--quantity">16</span>
@@ -575,7 +655,7 @@
                     </li>
                   </ul>
                 </div>
-                <div class="delivery__info">
+                <div class="delivery__info delivery__info-main">
                   <span class="delivery__text">Обратная доставка товаров на склад при отказе — <span class="delivery__free">бесплатно</span></span>
                 </div>
             </div>
@@ -588,7 +668,8 @@
                 <button class="payment__change btn btn__change">Изменить</button>
               </div>
               <div class="payment__card credit">
-                <p class="credit__number">1234 56•• •••• 1234</p>
+                <span class="credit__img"></span>
+                <span class="credit__number">1234 56•• •••• 1234</span>
                 <span class="credit__date">01/30</span>
               </div>
               <span class="payment__info">Спишем оплату с карты при получении</span>
@@ -601,23 +682,24 @@
                 <div class="recipient__form person">
                   <label class="person__name person__label">
                     <input type="text" placeholder="Имя">
-                    <span class="person__label--name">Имя</span>
+                    <span class="person__label-name">Имя</span>
                   </label>
                   <label class="person__surname person__label">
                     <input type="text" placeholder="Фамилия">
-                    <span class="person__label--surname">Фамилия</span>
+                    <span class="person__label-surname">Фамилия</span>
                   </label>
                   <label class="person__email person__label">
                     <input type="email" placeholder="Электронная почта">
-                    <span class="person__label--email">Электронная почта</span>
+                    <span class="person__label-email">Электронная почта</span>
                   </label>
                   <label class="person__phone person__label">
                     <input type="tel" placeholder="Телефон">
-                    <span class="person__label--phone">Телефон</span>
+                    <span class="person__label-phone">Телефон</span>
                   </label>
                   <label class="person__unn person__label">
                     <input type="number" placeholder="ИНН">
-                    <span class="person__label--unn">ИНН</span>
+                    <span class="person__label-unn">ИНН</span>
+                    <span class="person__unn-info">Для таможенного оформления</span>
                   </label>
                 </div>
               </div>
@@ -658,9 +740,38 @@
                   </div>
                 </div>
 
-                <div class="delivery__info delivery__info--result">
+                <div class="result__delivery">
+                  <span class="result__delivery-title">Доставка в пункт выдачи</span>
+                  <span class="result__delivery-address">Бишкек, улица Ахматбека Суюмбаева, 12/1</span>
+                  <span class="result__delivery-date">5–8 фев</span>
+                  <button class="result__delivery-btn btn">
+                    <span>
+                      <svg class="result__delivery-pencil" width="16" height="16">
+                        <use xlink:href="img/sprite/sprite.svg#pencil"></use>
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+
+                <div class="delivery__info delivery__info-result">
                   <span class="delivery__text">Обратная доставка товаров на склад при отказе — <span class="delivery__free">бесплатно</span></span>
                 </div>
+
+                <div class="result__card">
+                  <span class="result__card-title">Оплата картой</span>
+                  <div class="result__card-info">
+                    <span class="result__card-img"></span>
+                    <span class="result__card-number">1234 56•• •••• 1234</span>
+                  </div>
+                  <button class="result__delivery-btn btn">
+                    <span>
+                      <svg class="result__delivery-pencil" width="16" height="16">
+                        <use xlink:href="img/sprite/sprite.svg#pencil"></use>
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+
                 <div class="result__payment">
                   <label class="accordion__checkbox checkbox">
                     <input type="checkbox">
